@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Subahu Paul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#read-more").click(function() {
+                $(".more-content").slideToggle();
+                $(this).text(function(i, text) {
+                    return text === "Read More" ? "Read Less" : "Read More";
+                });
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="me.jpg" alt="My Photo" class="profile-pic">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="experiences.html"><i class="fas fa-briefcase"></i> Experiences</a></li>
+                    <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+					<li><a href="documents.html"><i class="fas fa-folder"></i>Documents</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-side">
+            <section class="about-section">
+                <h1>About Me</h1>
+                <h2>Hi, I'm Subahu Paul</h2>
+                <p>I am a technology enthusiast with a solid foundation in Information Technology, driven by a passion for software development, information systems, and cybersecurity. Over the years, I’ve gained hands-on experience through my IT internship and roles within the aviation industry.</p>
+                <p>My journey in technology began with a Bachelor of Technology degree, which laid the foundation for my understanding of information systems, programming languages, and different technologies. I've expanded my skills to include everything from software development and IT operation to project management.</p>
+                
+                <button id="read-more">Read More</button>
+                
+                <div class="more-content" style="display: none;">
+                    <p>Currently, I’m diving deep into my expertise in cybersecurity and cloud computing as I work towards earning my CompTIA Security+ and AWS Cloud Practitioner certifications. These certifications represent the next step in my career, allowing me to bring even more value to the teams.</p>
+                    <p>In every role I take on, I am committed to continuous learning and improvement. I thrive on solving complex problems, whether it’s troubleshooting network issues or optimizing workflows. My goal is always to apply my knowledge in ways that make a meaningful impact.</p>
+                    <p>Beyond my technical skills, I’m a strong team player who values collaboration and communication. My experience in aviation has taught me the importance of working seamlessly with others to achieve common goals. As I continue to grow in my career, I am eager to take on new challenges and apply my skills in environments that value innovation, security, and efficiency.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+    <!--<script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("more-text");
+            var btnText = document.getElementById("read-more-btn");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btnText.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Read More";
+            }
+        }
+    </script>-->
+</body>
+</html>
